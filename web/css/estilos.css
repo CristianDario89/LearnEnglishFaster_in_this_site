@@ -1,0 +1,56 @@
+*{margin: 0;padding: 0; box-sizing: border-box;}
+
+html{background-image: url(../img/fondo.png); background-size: cover;background-attachment: fixed;}
+
+
+nav{ width: 1100px; height: 100px; background:aqua}
+/*      header{ width: 1000px; height: 200px; background: #e74c3c}
+     main { width: 1000px; height: 500px; background: blueviolet}*/
+footer{ width: 1100px; height: 50px;  background: linear-gradient(black 10%, red 60%,orange 80%);
+        text-align: center; float: left; clear: both;
+}
+
+section#box{width: 198px; height: 100px; float: left;
+            background: darkorange;
+            border: 1px solid black;}
+
+section#banner{width: 800px; height: 300px; float: left;  background: linear-gradient(brown 20%, aqua 60%,black 97%);border: 5px solid black;}
+
+section#login{width: 300px; height: 150px;float: left; background:black;}
+section#form{width: 300px; height: 150px;float: left; background:black;}
+
+aside#left{width: 200px;height: 1300px;float:left;background: linear-gradient(to right, white, brown); border-left: 3px solid black;}
+article{width: 750px;height: 1300px;float:left;  background: linear-gradient(to right, white, green);}
+aside#right{width: 150px;height: 1300px;float:left; background: linear-gradient(to right, white, #439aea); border-right:3px solid black; }
+
+
+nav ul{width: 1100px; height: 100px; }
+nav ul li{ list-style: none; }
+nav ul li a{ float: left; width: 220px; text-align: center;line-height:100px;
+             text-decoration: none;font-size: 24px;font-weight: bold; border-right: 15px solid black;
+} /*line-height:(para q se ubica justo en la mitad,) la misma distancia del altodel menu
+             - seria la lista, el width es 200(e elem en el menu) xq el menu nav tiene 1000*/
+nav ul li a:hover{ color:white;  background: linear-gradient(brown 20%, aqua 60%,black 97%);text-shadow: 3px 1px 0px black;}
+ 
+/*  background: linear-gradient(to right, red, green);*/
+/*    background: linear-gradient(to right top, blue, orange); */
+/*   background: linear-gradient(360deg, orange, red,black);*/
+
+
+.fondo{
+    background: linear-gradient(orange 20%, red 60%,black 90%);
+}
+
+.lado img{float: left;  border: 6px solid black;
+          ;}
+
+.ima{width: 236px; height: 145px; cursor: pointer;}
+
+.cont-link{margin : 25px auto; width: 140px;height: 120px;}
+.link{width: 100%; height: 100%; }
+
+
+article .art-jsp{
+    width: 60%;
+}
+

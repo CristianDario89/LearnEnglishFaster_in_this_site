@@ -11,10 +11,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/tarjeta.css">
-        <link rel="stylesheet" href="css/estilos2.css">    
+        <link rel="stylesheet" href="css/preferen_form.css">    
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600" rel="stylesheet"> 
-      
+
         <style>
             @font-face {
                 font-family: 'alex';
@@ -24,6 +24,7 @@
                 font-style: normal;
 
             }
+            
             body{width:1100px; height: 1750px; margin:20px auto; background:aqua;    }
 
 
@@ -31,9 +32,14 @@
 
             article .parr2-jsp{
                 width: 70%;
-                margin-bottom: 50px;
+                margin: 50px auto;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 700;
+                
             }
 
+            .cont-link{margin-top: 25px; width: 140px;height: 120px;}
+.links{width: 100%; height: 50%; border-radius: 10px; cursor: pointer;}
 
         </style>
 
@@ -55,13 +61,13 @@
                 <li> <a href="#">English films</a></li>
                 <li> <a href="#">Synonyms</a></li>
                 <li> <a href="#"> Tips</a></li>
-                <li> <a href="#">Contactanos</a></li>
+                <li> <a href="plantilla.html">Contactanos</a></li>
             </ul>
         </nav>
 
         <header>
             <section id="banner"> 
-                <h1 title="&#9733;" class="my-3"><a href="plantillaESTR3_1.html">Fluent English by Luisano</a></h1>
+                <h1 title="&#9733;" class="my-3"><a href="index.html">Fluent English by Luisano</a></h1>
                 <h2>Because this day would come and union makes strength. Join us!</h2>
                 <h3>All the best and most useful English information joined and combined in one site along with amazing sections related to music, videos and books which help you progress remarkably.</h3>
             </section>
@@ -222,6 +228,7 @@
                     <div class="parr2-jsp">
                         <h2>Articulos de interes tras estudiar <%= studying%></h2>
 
+                        
                         Hoy es dia: <script> dia_de_hoy();
                         </script> <br>
 
@@ -249,7 +256,7 @@
             </article>
 
             <aside id="right">
-                <h3><a href="Sections/talkingabout.html">Talking about</a> </h3>  
+                <h3><a href="talkingabout.html">Talking about</a> </h3>  
                 <h3>Good health helps</h3> 
                 <h3>Verbs as per topic</h3>
                 <h3>Tips for studying</h3>
@@ -266,6 +273,6 @@
         <footer> <h2>Todos los derechos reservados </h2></footer>
 
 
-      
+
     </body>
 </html>

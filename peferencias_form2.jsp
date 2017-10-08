@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/estilos2.css">    
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+      
         <style>
             @font-face {
                 font-family: 'alex';
@@ -266,6 +266,6 @@
         <footer> <h2>Todos los derechos reservados </h2></footer>
 
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" ></script>
+      
     </body>
 </html>

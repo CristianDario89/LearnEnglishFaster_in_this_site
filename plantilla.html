@@ -15,9 +15,9 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/estilos2.css">    
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-        
-      
+
+
+
         <style>
             @font-face {
                 font-family: 'alex';
@@ -28,6 +28,48 @@ and open the template in the editor.
 
             }
             body{width:1100px; height: 1750px; margin:20px auto; background:aqua;    }
+            
+            /*Nuevos ESTILOS*/
+ form  {
+    width: 55%;
+    border:1px solid #ccc;
+    margin: 20px auto;
+    padding: 20px;
+}
+label{
+    font-size: 12px;
+    display: block;
+    width: 100%;
+}
+textarea{resize: vertical;
+max-height: 300px;}
+input, textarea, select{
+    
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:  border-box;
+    box-sizing:  border-box;
+    border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus{
+    border:1px solid #1668C4;
+}
+
+input[type="submit"]{
+    margin-bottom: 0;
+    background: #1668C4;
+    color:#fff;
+    border: none;
+}
+input[type="submit"]:hover{
+     color:#4A88F4;
+    cursor: pointer;
+}
+/**/
 
         </style>
 
@@ -156,104 +198,87 @@ and open the template in the editor.
             </aside>
 
             <article> 
-                <div class="art-jsp ml-3 mt-3">
+                <h2>Log-up</h2>
+                <form action="#" method="get"  >
+                    <label for="nom">Nombre:</label>
+                    <input type="text"  name="nombre" id="nom" placeholder="Ingrese Nombre:">
+
+                    <label for="email">Email:</label>
+                    <input type="email"  id="email"   placeholder="Enter email">
+                    <!--        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+
+                    <!--     <div class="form-group">
+                              <label for="exampleInputPassword1">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                          </div>-->
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" placeholder="escribe tu mensaje:" ></textarea>
+
+                    <input type="submit" value="Enviar">
+                </form>
+
+                <h2  >Quiz - 2nd form</h2>
+
+                <form action="recibe_form2.jsp">
                     
-                    <form action="servlet1.java" method="get">
-                        <h2 class="py-2">Log-up</h2>
-  <div class="form-group">
-    <label for="nom">Nombre</label>
-    <input type="text" class="form-control" name="nombre" id="nom" placeholder="Ingrese Nombre:">
-  </div>
-  <div class="form-group">
-    <label for="ape">Apellido</label>
-    <input type="text" class="form-control" name="apellido" id="ape" placeholder="Ingrese Apellido: ">
-  </div>
+                        <label for="Select1">How long have you been studying English?</label>
+                        <select  id="Select1" name="select_1">
+                            <option>1 year</option>
+                            <option>2 years</option>
+                            <option>between 3 and 5 years</option>
+                            <option>between 5 and 7 years</option>
+                            <option>Allmost all life</option>
+                        </select>
+                   
+
+                 
+                        <label for="Select2">Are you more interested in?</label>
+                        <select  id="Select2" name="select_2">
+                            <option name="o1">Expressions and Slangs</option>
+                            <option name="o2">Vocabulary and Synonymus</option>
+                            <option>Phrasal verbs</option>
+                            <option>Grammar and phonethic</option>
+                            <option>A bit of all</option>
+                        </select>
                   
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
+
                    
-                     <button type="submit" class="btn btn-primary">Submit</button>
-                   </form>
-                   
-                    <h2 class="py-2">Quiz - 2nd form</h2>
+                        <label for="selec2">What your favorutite hobbie?</label>
+                        <select multiple   id="select2" name="select_3">
+                            <option>Sports</option>
+                            <option>Videogames</option>
+                            <option>Dancing</option>
+                            <option>Fishing</option>
+                            <option>Go dancing</option>
+                        </select>
+             <!-- suspendido x confihuracion y tampoco es muy necesario so far
+                    <fieldset class="form-group">
+                        <legend>Radio buttons</legend>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                Save mi perfil data - permit cookies
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                                No save mi perfil data - no permit cookies
+                            </label>
+                        </div>
+
+                    </fieldset>         
+
+                       <label class="form-check-label">
+                            <input type="checkbox"  >
+                            Check me out
+                        </label>  -->
                     
-                    <form action="recibe_form2.jsp">
-  <div class="form-group">
-    <label for="Select1">How long have you been studying English?</label>
-    <select class="form-control" id="Select1" name="select_1">
-      <option>1 year</option>
-      <option>2 years</option>
-      <option>between 3 and 5 years</option>
-      <option>between 5 and 7 years</option>
-      <option>Allmost all life</option>
-    </select>
-  </div>
-                    
-                    <div class="form-group">
-    <label for="Select2">Are you more interested in?</label>
-    <select class="form-control" id="Select2" name="select_2">
-      <option name="o1">Expressions and Slangs</option>
-      <option name="o2">Vocabulary and Synonymus</option>
-      <option>Phrasal verbs</option>
-      <option>Grammar and phonethic</option>
-      <option>A bit of all</option>
-    </select>
-  </div>
-                    
-  <div class="form-group">
-    <label for="selec2">What your favorutite hobbie?</label>
-    <select multiple class="form-control" id="select2" name="select_3">
-      <option>Sports</option>
-      <option>Videogames</option>
-      <option>Dancing</option>
-      <option>Fishing</option>
-      <option>Go dancing</option>
-    </select>
-  </div>
-                    
-                    
-  <div class="form-group">
-    <label for="exampleTextarea">Example textarea</label>
-    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-  </div>
-   
-  <fieldset class="form-group">
-    <legend>Radio buttons</legend>
-    <div class="form-check">
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-        Save mi perfil data - permit cookies
-      </label>
-    </div>
-    <div class="form-check">
-    <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-        No save mi perfil data - no permit cookies
-      </label>
-    </div>
-   
-  </fieldset>
-                   
-  <div class="form-check">
-    <label class="form-check-label">
-      <input type="checkbox" class="form-check-input">
-      Check me out
-    </label>
-  </div>
-                   
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-</div>
-                
-                
-            </article>
+             <input type="submit" value="Enviar Preferencias"> 
+                </form>
+
+   </article>
 
             <aside id="right">
                 <h3><a href="Sections/talkingabout.html">Talking about</a> </h3>  
@@ -269,10 +294,10 @@ and open the template in the editor.
             </aside>
         </main>
 
-        
+
         <footer> <h2>Todos los derechos reservados </h2></footer>
 
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" ></script>
+
     </body>
 </html>

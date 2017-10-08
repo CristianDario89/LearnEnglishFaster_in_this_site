@@ -3,3 +3,5 @@ A simple web English site which can help you on your learning of this language, 
 
 Take a look!:
 https://cristiandario89.github.io/EnglishWeb_forms_jsp/#
+
+https://cristiandario89.github.io/EnglishWeb_forms_jsp/plantilla

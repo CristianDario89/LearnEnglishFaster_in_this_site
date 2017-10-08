@@ -154,41 +154,8 @@ footer h2{
     width: 56%;
 }
 
-/*Small talk*/ /*Small talk*//*Small talk*//*Small talk*//*Small talk*/ 
-/*Small talk*//*Small talk*//*Small talk*//*Small talk*//*Small talk*/
-/*
-.art-small .div-art{
-    display: inline-block;
-    position: relative;
-    margin: 32px 35px;
-}
-.art-small h3 {
-    padding: 4px;
-    margin: 0 17px 0;
-    left: 115px;
-    position: absolute;
-    left: 35px;
-    top: -40px;
-    background: linear-gradient(to right, white, brown);
-    font-family: 'alex', sans-serif;
-    font-size: 23px;
-}
-.art-small p::first-letter{
-    font-size: 35px;
-    background: white;
-    color: tomato;
-    float: left;
-    margin: 5px;
-    padding: 4px;
-    font-family: 'Satisfy', cursive;
-}
-.ima2{
-    width: 300px;
-    height: 150px;
-    cursor: pointer;
-}
 
-*/
+ 
 /*grammar 2*/
 div.lista1{
     background: #ffffff;

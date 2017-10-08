@@ -1,0 +1,65 @@
+ .paginacion{
+     margin: 20px 0;
+ }
+ 
+ .paginacion ul{
+     list-style: none;
+     text-align: center;
+ }
+ 
+ .paginacion ul li{
+     display: inline-block; /*una vez puesto uno al lado del otro, darle color y forma*/
+ margin-right: 10px; /*pa q se vea bien esteticamente*/
+ }
+ 
+ .paginacion ul li a{
+     display: block; /*puede ser inline-block, es la misma mierda*/
+  padding: 10px 20px;
+  color: white;
+  background: darkgreen;
+  text-decoration: none;
+ }
+ 
+ .paginacion ul li a:hover{
+     background: chartreuse; 
+ }
+ 
+ .paginacion ul li .active{
+     background: chartreuse;
+     font-weight: bold; /*p q quede marcado en q pag estamos*/
+ }
+ 
+  /*Small talk*/ /*Small talk*//*Small talk*//*Small talk*//*Small talk*/ 
+/*Small talk*//*Small talk*//*Small talk*//*Small talk*//*Small talk*/
+ 
+.art-small .div-art{
+    display: inline-block;
+    position: relative;
+    margin: 32px 35px;
+}
+.art-small h3 {
+    padding: 4px;
+    margin: 0 17px 0;
+    left: 115px;
+    position: absolute;
+    left: 35px;
+    top: -40px;
+    background: linear-gradient(to right, white, brown);
+    font-family: 'alex', sans-serif;
+    font-size: 23px;
+}
+.art-small p::first-letter{
+    font-size: 35px;
+    background: white;
+    color: tomato;
+    float: left;
+    margin: 5px;
+    padding: 4px;
+    font-family: 'Satisfy', cursive;
+}
+.ima2{
+    width: 300px;
+    height: 150px;
+    cursor: pointer;
+}
+

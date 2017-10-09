@@ -106,7 +106,7 @@ article h2 > a:hover::after{
 /*parte ASIDEs*//*parte ASIDEs*/
 /*parte ASIDEs*//*parte ASIDEs*//*parte ASIDEs*//*parte ASIDEs*//*parte ASIDEs*/
 
-main aside > h2{
+main aside  > h2{
     text-align: center;
     margin-top: 2px;
     font-family: 'alex', sans-serif;

@@ -29,9 +29,33 @@ and open the template in the editor.
             }
             body{width:1100px; height: 1750px; margin:20px auto; background:aqua;    }
             
+#principal{
+	
+	padding:10px 10px 10px 50px;
+	background-color:limegreen;	
+	box-shadow: 10px 10px 5px 0px #999999;
+	border-radius: 10px;
+    font-family: alex,sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#principal td{
+	padding-bottom:25px;
+}
+#principal h1{
+	text-align:center;
+}
+
+
+#tarjeta, #fecha_tarjeta, #email, #n_tarjeta, #f_tarjeta, #e_mail{
+	visibility:hidden;
+	
+}
+
             /*Nuevos ESTILOS*/
  form  {
-    width: 55%;
+    width: 85%;
     border:1px solid #ccc;
     margin: 20px auto;
     padding: 20px;
@@ -72,7 +96,23 @@ input[type="submit"]:hover{
 /**/
  .cont-link{margin-top: 25px; width: 140px;height: 120px;}
  .links{width: 100%; height: 50%; border-radius: 10px; cursor: pointer; }
+            
+            /*article*/
+            #form_datos label.error{
+        font-size: 0.8em;
+        color: red;
+        font-weight: bold;
+        display: block;
+        margin-left: 215px;
+    }
+           
         </style>
+        
+        
+<script src="JQuery/jquery-3.2.1.min.js"></script>
+ 
+<script src="js/validationQ.js"></script>
+    <script src="js/form.js"></script>
 
     </head>
     <body>
@@ -198,28 +238,64 @@ input[type="submit"]:hover{
                 </div> 
             </aside>
 
-            <article> 
-                <h2>Log-up</h2>
-                <form action="#" method="get"  >
-                    <label for="nom">Nombre:</label>
-                    <input type="text"  name="nombre" id="nom" placeholder="Ingrese Nombre:">
-
-                    <label for="email">Email:</label>
-                    <input type="email"  id="email"   placeholder="Enter email">
-                    <!--        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-
-                    <!--     <div class="form-group">
-                              <label for="exampleInputPassword1">Password</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                          </div>-->
-
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" placeholder="escribe tu mensaje:" ></textarea>
-
-                    <input type="submit" value="Enviar">
-                </form>
-
-                <h2  >Quiz - 2nd form</h2>
+            <article class="artform"> 
+                <h2>Log-in</h2>
+   
+<div id="contenedor">           
+<form id="form_datos">
+  <table width="100%" border="0" align="center" id="principal">
+    <tr>
+      <td>Nombre:</td>
+      <td><label for="nombre"></label>
+        <input type="text" name="nombre" id="nombre" ></td>
+    </tr>
+    <tr>
+      <td>Apellidos:</td>
+      <td><input type="text" name="apellido" id="apellido" ></td>
+    </tr>
+    <tr>
+      <td>Fecha Nacimiento</td>
+      <td><label for="f_nacimiento"></label>
+        <input type="text" name="f_nacimiento" id="f_nacimiento"  ></td>
+    </tr>
+    <tr>
+      <td>Edad:</td>
+      <td><input name="edad" type="edad" id="edad" size="4" ></td>
+    </tr>
+     <tr>
+      <td>Email:</td>
+      <td><label for="mail"></label>
+        <input type="text" name="mail" id="mail" ></td>
+    </tr>
+    <tr>
+      <td>Página web:</td>
+      <td><label for="p_web"></label>
+        <input type="text" name="p_web" id="p_web"  ></td>
+    </tr>
+    
+     
+     <tr>
+      <td><p>País:</p></td>
+      <td><p>
+        <label for="pais"></label>
+        <select name="pais" id="pais">
+          <option>España</option>
+          <option>México</option>
+          <option>Colombia</option>
+          <option>Perú</option>
+          <option>Chile</option>
+          <option>Argentina</option>
+        </select>
+     </td>
+    </tr>
+    <tr>
+    <td colspan="2" align="center"><input type="submit" value="Enviar" id="comprobar"></td>
+   
+    </tr>
+  </table>
+  </form>
+</div>
+                <h2>Preference</h2>
 
                 <form action="recibe_form2.jsp">
                     
